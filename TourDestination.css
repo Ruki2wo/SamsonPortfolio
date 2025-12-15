@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(BG2.png);
+}
+.TitleContainer{
+    top: 0;
+    z-index: 1000;
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+.Title{
+    -webkit-text-stroke: 2px black;
+    animation: fadeSlideIn 2s ease-out forwards;
+}
+.bgHero{
+    background-image: url(CEBU.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: stretch;
+    height: 200px;
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+.heroTitle{
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+.subtitle{
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+.bgOverlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 200px;
+}
+.Title{
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+.card{
+    animation: fadeSlideIn 3s ease-out forwards;
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

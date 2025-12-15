@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    background-image: url(wooden-floor-background_53876-88628.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+}
+
+.bg-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: auto;
+}
+.Title{
+    letter-spacing: 10px;
+}
+.carousel-text {
+    height: 500px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+.CarouselSubtitle{
+    font-size: clamp(15px, 1.5vw, 20px);
+}
+
+@media only screen and (min-width: 575px) {
+    .carousel-text{
+        max-height: 100dvh;
+    }
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-image: url('company.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+.bg-overlay{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+}
+
+.infographic-wrapper {
+    width: 40%;
+    height: 70vh;
+    margin: auto;
+    position: relative;
+    filter: drop-shadow(0px 8px 18px rgba(0, 0, 0, 0.25));
+    animation: fadeSlideIn 2.5s ease-out forwards;
+}
+
+.infographic-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    background: white;
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+
+.slice {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.customImage1{
+    background-image: url(day1comp.jpg);
+    background-position: start;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+.customImage2{
+    background-image: url(RivanIT.jpg);
+    background-position: top;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+.customImage3{
+    background-image: url(117.JPG);
+    background-position: start;
+    background-size: 140%;
+    background-repeat: no-repeat;
+}
+.customImage4{
+    background-image: url(dynata2.JPG);
+    background-position: end;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+.customImage5{
+    background-image: url(MATA.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Text1{
+    -webkit-text-stroke: 2px #1295a9;
+    animation: fadeSlideIn 1.5s ease-out forwards;
+}
+.Text2{
+    -webkit-text-stroke: 2px #ffc054;
+    animation: fadeSlideIn 1.5s ease-out forwards;
+}
+.Text3{
+    -webkit-text-stroke: 2px #ff6ab4;
+    animation: fadeSlideIn 1.5s ease-out forwards;
+}
+.Text4{
+    -webkit-text-stroke: 2px #666bff;
+    animation: fadeSlideIn 1.5s ease-out forwards;
+}
+.TitleContainer{
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+
+.slice1 { 
+    border: 5px solid #65eaff;z-index: 103;}
+.slice2 { 
+    border: 5px solid #ffc054;z-index: 102;}
+.slice3 { 
+    border: 5px solid #ff6ab4;z-index: 101;}
+.slice4 { 
+    border: 5px solid #666bff;z-index: 104;}
+
+.slice-top-left { top:0; left:0; border-top-left-radius: 100%; }
+.slice-top-right { top:0; right:0; border-top-right-radius: 100%; }
+.slice-bottom-left { bottom:0; left:0; border-bottom-left-radius: 100%; }
+.slice-bottom-right { bottom:0; right:0; border-bottom-right-radius: 100%; }
+.subtitle{
+    animation: fadeSlideIn 3s ease-out forwards;
+}
+
+.center-circle {
+    background-color: wheat;
+    z-index: 1001;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #ffffff;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dynataModalHeader{
+    background-color: #666bff;
+}
+.RivanModalHeader{
+    background-color: #ffc054;
+}
+.UPModalHeader{
+    background-color: #65eaff;
+}
+.TarsierModalHeader{
+    background-color: #ff6ab4;
+}
+.MataModalHeader{
+    background-color: wheat;
+}
+.modal-title{
+    font-weight: 800;
+}
+.text-white-50, .modal-title{
+    letter-spacing: 5px;
+}
+.Title{
+    animation: fadeSlideIn 2s ease-out forwards;
+    -webkit-text-stroke: 2px black;
+}
+.DynataLogo{
+    width: 30%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .customImage1, .customImage2, .customImage3, .customImage4{
+        background-size: 150%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .customImage3{
+        background-size: 160%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .infographic-wrapper{
+        width: 60%;
+        height: 65vh;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .customImage1, .customImage2, .customImage4{
+        background-size: 170%;
+    }
+    .customImage3{
+        background-size: 185%;
+    }
+    .infographic-wrapper{
+        height: 70vh;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .infographic-wrapper{
+        width: 100%;
+        height: 60vh;
+    }
+}
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bg {
+    background-image: url('BG4.png');
+    background-size: contain;
+    height: auto;
+    width: 100%;
+}
+.bg-overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: auto;
+}
+.TitleContainer{
+    top: 0;
+    z-index: 1000;
+    height: auto;
+    width: auto;
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+.Title{
+    -webkit-text-stroke: 2px black;
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+.text{
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+.img-thumbnail{
+    height: 14rem;
+    width: 70%;
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+
+@media only screen and (max-width: 991px) {
+    .img-thumbnail {
+        height: 250px;
+        width: 100%;
+    }
+}
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

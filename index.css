@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('BG2.png');
+    background-size: contain;
+}
+.bg{
+    background-image: url('BG3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.airplaneContainer{
+    height: 100vh;
+    margin-top: 26rem;
+}
+.btn-size{
+    letter-spacing: 0.2em;
+}
